@@ -3,9 +3,119 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <title>Document</title>
 </head>
 <body>
-    
+  <header>
+    <nav>
+      <ul>
+        <li><a href="#">Inicio</a></li>
+        <li><a href="#">Negocios</a></li>
+        <li><a href="#">Agrega tu negocio</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <section class="inicio">
+      <h1>Descubre</h1>
+      <p>Lo increíbles negocios de Barranquilla</p>
+      <i class='bx bx-down-arrow-alt'></i>
+    </section>
+    <section class="directorio">
+      <div class="opciones">
+        <!-- filtros con select -->
+        <select name="filtrar">
+          <option value="" disabled selected>Tipos de negocios</option>
+          <option value="ropa">Ropa</option>
+          <option value="comida">Comida</option>
+        </select>
+        <!-- filtros con checkbox -->
+        <div class="filtrar">
+          <button>Tipos de negocios</button>
+          <ul class="filtros">
+            <li>
+              <input type="checkbox" id="ropa" name="ropa" value="ropa">
+              <label for="ropa">Ropa</label>
+            </li>
+            <li>
+              <input type="checkbox" id="comida" name="comida" value="comida">
+              <label for="comida">Comida</label>
+            </li>
+          </ul>
+        </div>
+        <!-- buscador -->
+        <form action="" method="GET">
+          <label for="buscar">Buscar</label>
+          <input type="text" id="buscar" name="buscar">
+          <button type="submit">
+            <i class='bx bx-search-alt'></i>
+          </button>
+        </form>
+        <!-- ordenar con select -->
+        <select name="ordenar">
+          <option value="" disabled selected>Odernar por...</option>
+          <option value="ropa">Orden alfabetico</option>
+        </select>
+      </div>
+      <div class="negocios-lista">
+        <div class="negocio-tarjeta">
+          <img src="" alt="Nombre del negocio">
+          <p class="nombre">Nombre del negocio</p>
+          <p class="tipo">Tipo de negocio</p>
+          <button>Ver mas</button>
+        </div>
+        <div class="modal">
+          <i class='bx bx-x'></i>
+          <div class="negocio-descripcion">
+            <div>
+              <img src="" alt="nombre del negocio">
+              <h2>Nombre del negocio</h2>
+              <p class="horario">Horario de atencion</p>
+              <p class="ubicacion">Ubicacion</p>
+            </div>
+            <h3>Sobre "Nombre del negocio"</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos necessitatibus rem quas fuga cupiditate vero laborum vel nihil consequuntur in?</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="formulario">
+      <div>
+        <h3>Forma parte de nuestra pagina</h3>
+        <p>Si tu negocio también se encuentra en Barranquilla, puede formar parte de nuestra pagina. 
+          <br> Envíanos un correo contándonos sobre este.</p>
+        <div class="email">
+          <i class='bx bxs-envelope'></i>
+          <p>negocios@gmail.com</p>
+        </div>
+      </div>
+      <form action="" method="POST">
+        <label for="tu-nombre">Tu nombre</label>
+        <input type="text" id="tu-nombre" name="tu-nombre" placeholder="Escribe tu nombre">
+
+        <label for="tu-negocio">Tu negocio</label>
+        <input type="text" id="tu-negocio" name="tu-negocio" placeholder="Escribe el nombre de tu negocio">
+
+        <label for="sobre-negocio">Sobre tu negocio</label>
+        <textarea id="sobre-negocio" name="sobre-negocio" placeholder="Escribe de que trata tu negocio"></textarea>
+
+        <button type="submit">Enviar</button>
+      </form>
+    </section>
+  </main>
+  <footer>
+    <ul class="redes-sociales">
+      <li><a href=""><i class='bx bxl-instagram-alt'></i></a></li>
+      <li><a href=""><i class='bx bxl-twitter'></i></a></li>
+      <li><a href=""><i class='bx bxl-facebook'></i></a></li>
+      <li><a href=""><i class='bx bxl-tiktok'></i></a></li>
+    </ul>
+    <ul>
+      <li><a href="#">Inicio</a></li>
+      <li><a href="#">Negocios</a></li>
+      <li><a href="#">Agrega tu negocio</a></li>
+    </ul>
+  </footer>
 </body>
 </html>
