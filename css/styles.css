@@ -35,32 +35,37 @@ button{
     width: 100%;
     height: 348px;
     z-index: -1;
-    animation: introLoad 3s forwards;    
+    animation: introLoad 3s forwards;
 }
 h1{
-  text-shadow: 3px 3px #000000;
+  text-shadow: 3px 3px #242424;
 }
 .subtitulo{
   color: #fff;
   font-size: 1.2rem;
   font-weight: bold;
-  text-shadow: 1px 1px #000000;
+  text-shadow: 1px 1px #242424;
 }
 .arrow{
   animation: moveArrow 1s alternate-reverse infinite;
+  color: #fff;
+  text-shadow: 1px 1px #242424;
 }
 .negociostxt{
   font-weight: bold;
 }
 
 .textoRojo{
-  color:#ff0000;
+  color:#ff4242;
+  /* color:#ff0000; */
 }
 .textoAmarillo{
-  color:#d5d212
+  color:#ffd638;
+  /* color:#d5d212 */
 }
 .textoVerde{
-  color:#55b005
+  color:#54e741;
+  /* color:#55b005 */
 }
 
 header,
@@ -94,7 +99,7 @@ h1{
 }
 .buscador,
 .directorio select{
-  border: 1px solid #000;
+  border: 1px solid #c3cfd9;
   border-radius: 5px;
   padding: 10px;
 }
@@ -122,7 +127,7 @@ h1{
   flex-direction: column;
   align-items: start;
   gap: 10px;
-  border: 2px solid #000;
+  border: 2px solid #c3cfd9;
   border-radius: 10px;
   padding: 10px;
   box-sizing: border-box;
@@ -144,7 +149,7 @@ h1{
 }
 .negocio-descripcion{
   max-width: 480px;
-  border: 1px solid #000;
+  border: 1px solid #c3cfd9;
   border-radius: 10px;
   background-color: #fff;
   padding: 20px;
@@ -180,7 +185,7 @@ h1{
 .mensaje input,
 .mensaje textarea{
   width: 100%;
-  border: 1px solid #000;
+  border: 1px solid #c3cfd9;
   border-radius: 5px;
   padding: 10px;
   outline: none;
