@@ -1,0 +1,220 @@
+  
+/* Imagen de fondo */
+h1,
+.subtitulo,
+.arrow {
+  text-shadow: 3px 3px #242424;
+}
+
+.subtitulo {
+  color: #fff;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.arrow {
+  animation: moveArrow 1s alternate-reverse infinite;
+  color: #fff;
+}
+
+.negociostxt {
+  font-weight: bold;
+}
+
+.inicio,
+.directorio {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 25px;
+}
+
+/* Inicio */
+.hero-img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: url(https://cdn2.majorel.com/wp-content/uploads/sites/9/20220407043051/37893708846_b444d4955f_o-scaled.jpg);
+  background-size: cover;
+  background-position-y: 25%;
+  width: 100%;
+  height: 410px;
+  z-index: -1;
+  animation: introLoad 3s forwards;
+}
+
+
+.navbar {
+	position: relative;
+	z-index: 1000;
+}
+
+.navbar a {
+	color: white;
+}
+
+.inicio {
+  gap: 25px;
+  font-size: 18px;
+	margin-top: -60px;
+  height: 410px;
+  display: flex;
+  justify-content: center;
+	align-items: center;
+  backdrop-filter: blur(4px);
+}
+
+h1 {
+  font-size: 60px;
+}
+
+/* Directorio */
+.directorio {
+  gap: 50px;
+}
+
+.buscador,
+.directorio select {
+  border: 1px solid #c3cfd9;
+  border-radius: 5px;
+  padding: 10px;
+}
+
+.buscador input,
+.buscador button {
+  border: none;
+  outline: none;
+  background-color: transparent;
+  font-size: 16px;
+}
+
+.directorio select {
+  outline: none;
+  font-size: 16px;
+}
+
+.negocios-lista {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 40px;
+  max-width: 90%;
+}
+
+.negocio-tarjeta {
+  width: 210px;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 10px;
+  border: 2px solid #c3cfd9;
+  border-radius: 10px;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+.negocio-tarjeta img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+.negocio-tarjeta button {
+  border: none;
+  border-radius: 5px;
+  padding: 10px 15px;
+  font-size: 14px;
+  background-color: #ff4242;
+  color: #fff;
+}
+
+.negocio-tarjeta .nombre {
+  font-size: 18px;
+}
+
+.modal {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  align-items: center;
+  justify-content: center;
+}
+
+.negocio-descripcion {
+  width: 480px;
+  border: 1px solid #c3cfd9;
+  border-radius: 10px;
+  background-color: #fff;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  font-size: 14px;
+}
+
+.negocio-descripcion img {
+  width: 60%;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+.negocio-datos {
+  display: flex;
+  gap: 10px;
+}
+
+.negocio-datos p {
+  margin-top: 10px;
+}
+
+/* otros */
+.modal,
+.filtrar {
+  display: none;
+}
+
+/* Media queries*/
+@media (max-width: 710px) {
+.inicio {
+	margin-top: 0;
+}
+
+	.navbar a {
+		color: black !important;
+	}
+
+  .hero-img {   
+    top: 0px;   
+  }
+
+  .opciones{
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .negocio-tarjeta{
+    width: 170px;
+  }
+}
+
+/* animación flecha*/
+@keyframes moveArrow {
+    from {
+      transform: translateY(-10px);
+    }
+    to {
+      transform: translateY(20px);
+    }
+  }
+  
+  /* animación imagen de fondo*/
+  @keyframes introLoad {
+    0% {
+      opacity: 0.2;
+    }
+    99% {
+      opacity: 1;
+    }
+  }

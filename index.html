@@ -7,38 +7,43 @@
       href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="css/styles.css" />
-    <title>Document</title>
+    <link rel="stylesheet" href="./assets/css/styles.css" />
+    <link rel="stylesheet" href="./assets/css/inicio.css">
+    <title>Negocios Barranquilla</title>
   </head>
   <body>
     <header>
       <nav>
-        <img class="btnCerrarNav" src="recursos/close.svg" alt="btn cerrar">
+        <img class="btnCerrarNav" src="./assets/svg/close.svg" alt="btn cerrar">
         <ul class="navbar">
           <li><a href="#inicio">Inicio</a></li>
           <li><a href="#directorio">Negocios</a></li>
           <li><a href="#formulario">Agrega tu negocio</a></li>
         </ul>
       </nav>
+
       <svg class="btnMenuLateral" width="48" height="32" viewBox="0 0 48 32" 
         fill="none" xmlns="http://www.w3.org/2000/svg">
         <path d="M24 32H0V26.6667H24V32ZM48 18.6667H0V13.3333H48V18.6667ZM48 5.33333H24V0H48V5.33333Z" 
         fill="white"/>
       </svg>
     </header>
+
     <main>
       <div class="hero-img"></div>
-      <section class="inicio" id="inicio">
+      <section class="inicio">
         <h1>
-          <span class="textoRojo">Ba</span
-          ><span class="textoAmarillo">rran</span
-          ><span class="textoVerde">qui</span><span class="textoRojo">lla</span>
+          <span style="color: #ff4242;">Ba</span
+          ><span style="color: #ffd638;">rran</span
+          ><span style="color: #54e741;">qui</span
+          ><span style="color: #ff4242;;">lla</span>
         </h1>
         <p class="subtitulo">
           Descubre sus increíbles <span class="negociostxt">negocios</span>
         </p>
-        <i class="bx bx-down-arrow-alt bx-md arrow"></i>
+        <a id="arrow-anchor" href=""><i class="bx bx-down-arrow-alt bx-md arrow"></i></a>
       </section>
+
       <section class="directorio" id="directorio">
         <div class="opciones">
           <!-- filtros con select -->
@@ -66,6 +71,7 @@
               </li>
             </ul>
           </div>
+
           <!-- buscador -->
           <form action="" method="GET" class="buscador">
             <input type="text" id="buscar" name="buscar" placeholder="Buscar" />
@@ -73,34 +79,38 @@
               <i class="bx bx-search-alt"></i>
             </button>
           </form>
+
           <!-- ordenar con select -->
           <select name="ordenar">
             <option value="" disabled selected>Odernar por...</option>
             <option value="ropa">Orden alfabetico</option>
           </select>
         </div>
+
         <div class="negocios-lista">
           <div class="negocio-tarjeta">
             <img
-              src="recursos/heladeria-americana.png"
+              src="./assets/img/heladeria-americana.png"
               alt="Heladería Americana"
             />
             <p class="nombre">Heladería Americana</p>
             <p class="tipo">Comida</p>
             <button>Ver mas</button>
           </div>
+
           <div class="negocio-tarjeta">
-            <img src="recursos/negocio.jpg" alt="Panaderia Don Carlos" />
+            <img src="./assets/img/negocio.jpg" alt="Panaderia Don Carlos" />
             <p class="nombre">Panaderia Don Carlos</p>
             <p class="tipo">Comida</p>
             <button>Ver mas</button>
           </div>
+
           <div class="modal">
             <i class="bx bx-x bx-md"></i>
             <div class="negocio-descripcion">
               <div class="negocio-datos">
                 <img
-                  src="recursos/heladeria-americana.png"
+                  src="./assets/img/heladeria-americana.png"
                   alt="Heladería Americana"
                 />
                 <div>
@@ -109,6 +119,7 @@
                   <p class="ubicacion">Carrera 43 No. 72 - 52</p>
                 </div>
               </div>
+
               <h3>Sobre Heladería Americana</h3>
               <p>
                 La Heladería Americana, es una empresa del sector de alimentos
@@ -118,17 +129,19 @@
               </p>
             </div>
           </div>
+
           <div class="modal">
             <i class="bx bx-x bx-md"></i>
             <div class="negocio-descripcion">
               <div class="negocio-datos">
-                <img src="recursos/negocio.jpg" alt="Panaderia Don Carlos" />
+                <img src="./assets/img/negocio.jpg" alt="Panaderia Don Carlos" />
                 <div>
                   <h2>Panaderia Don Carlos</h2>
                   <p class="horario">7:00 - 20:00</p>
                   <p class="ubicacion">Carrera 43 No. 72 - 52</p>
                 </div>
               </div>
+
               <h3>Sobre Panaderia Don Carlos</h3>
               <p>
                 La Panaderia Don Carlos, es una empresa del sector de alimentos
@@ -139,6 +152,7 @@
           </div>
         </div>
       </section>
+
       <section class="formulario" id="formulario">
         <div class="descripcion">
           <h3>Forma parte de nuestra pagina</h3>
@@ -152,6 +166,7 @@
             <p>negocios@gmail.com</p>
           </div>
         </div>
+
         <form action="" method="POST" class="mensaje">
           <label for="tu-nombre">Tu nombre</label>
           <input
@@ -180,6 +195,7 @@
         </form>
       </section>
     </main>
+    
     <footer>
       <ul class="redes-sociales">
         <li>
@@ -202,5 +218,6 @@
       </ul>
     </footer>
   </body>
-  <script src="js/script.js"></script>
+  <script src="./assets/js/script.js"></script>
+  <script src="./assets/js/inicio.js"></script>
 </html>
