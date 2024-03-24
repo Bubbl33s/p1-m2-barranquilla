@@ -157,6 +157,7 @@ h1 {
 
 .negocio-tarjeta {
   width: 210px;
+  height: fit-content;
   display: flex;
   flex-direction: column;
   align-items: start;
