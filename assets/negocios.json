@@ -5,7 +5,7 @@
     "ubicacion": "Carrera 43 No. 72 - 52",
     "descripcion": "La Heladería Americana, es una empresa del sector de alimentos especializada en la producción de helados. Disfruta nuestra variedad de platos y deleitate con el sabor casero que prefieres.",
     "tipo": "comida",
-    "imagen": "recursos/heladeria-americana.png"
+    "imagen": "/assets/img/heladeria-americana.png"
   },
   {
     "nombre": "Le Panier - Panadería Artesanal",
@@ -13,6 +13,6 @@
     "ubicacion": "Carrera 53 No. 85 - 97",
     "descripcion": "En Le Panier, creemos que comer saludable no tiene por qué ser aburrido. Nuestros platos frescos y llenos de sabor son la prueba de que lo nutritivo puede ser exquisito. Ven y descubre una nueva opción de comida saludable con nosotros. 🌿🍴",
     "tipo": "comida",
-    "imagen": "recursos/le-panier.jpg"
+    "imagen": "/assets/img/le-panier.jpg"
   }
 ]
